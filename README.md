@@ -12,6 +12,8 @@ Admin
 
 1. Can Read Map Outlite
 
+1. Auto Get Last Login
+
 Customer
 
 1. Can login as Admin
@@ -19,6 +21,8 @@ Customer
 
 1. Can Read Map Outlite
 2. Can Write Own Map Outlite
+
+1. Auto Get Last Login
 
 AnonymousUser
 
@@ -47,4 +51,6 @@ AnonymousUser
   1. ViewModel
   2. LiveData
 6. Repository
-
+7. Other
+  1. Handle emptyField
+  2. Handle OnBack Activity
