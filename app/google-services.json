@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "534869171590",
+    "firebase_url": "https://belajarfirebase-a99c1.firebaseio.com",
+    "project_id": "belajarfirebase-a99c1",
+    "storage_bucket": "belajarfirebase-a99c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534869171590:android:b438a154f1eebfba5a2007",
+        "android_client_info": {
+          "package_name": "id.itborneo.belajarfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534869171590-jb69jolkhdhrfahh6a4lsruqnb1vrmae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-R1T4vZqXeK7uCWJRjoYvnBKzqtHvxow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534869171590-3v4eup99j0qiop5n50f13jcr9dau2hi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534869171590:android:15b621d0f0eb2b5c5a2007",
+        "android_client_info": {
+          "package_name": "id.itborneo.week9_samarindaoutlite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534869171590-jb69jolkhdhrfahh6a4lsruqnb1vrmae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-R1T4vZqXeK7uCWJRjoYvnBKzqtHvxow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534869171590-3v4eup99j0qiop5n50f13jcr9dau2hi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

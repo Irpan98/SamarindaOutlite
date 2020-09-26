@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Week9_SamarindaOutlite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="outlite">Outlite</string>
+    <string name="maps">Maps</string>
+    <string name="selamatdatang">Selamat Datang</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_as_admin">Login as Admin</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="customer">Customer</string>
+    <string name="admin">Admin</string>
+    <string name="login_as_user">Login As User</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="location">Location</string>
+    <string name="job">Job</string>
+    <string name="log_out">Log Out</string>
+    <string name="add">Add</string>
+    <string name="outlite_nae">Outlite Name</string>
+    <string name="insert">Insert</string>
+    <string name="loading">Loading....</string>
+    <string name="get_location">Get Location</string>
+    <string name="move_the_camera">Move the Camera</string>
+</resources>
