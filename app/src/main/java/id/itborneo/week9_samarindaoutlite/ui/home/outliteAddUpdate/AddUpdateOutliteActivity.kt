@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import id.itborneo.week9_samarindaoutlite.R
@@ -13,6 +14,7 @@ import id.itborneo.week9_samarindaoutlite.ui.mapMarker.MapMarkerActivity.Compani
 import id.itborneo.week9_samarindaoutlite.ui.mapMarker.MapMarkerActivity.Companion.REQ_MAP
 import id.itborneo.week9_samarindaoutlite.utils.EXTRA_OUTLITE
 import id.itborneo.week9_samarindaoutlite.utils.SpinKitUtils
+import id.itborneo.week9_samarindaoutlite.utils.ViewUtils
 import kotlinx.android.synthetic.main.activity_create_update_outlite.*
 
 class AddUpdateOutliteActivity : AppCompatActivity() {
@@ -93,6 +95,8 @@ class AddUpdateOutliteActivity : AppCompatActivity() {
 
 
         btnAddUpdate.setOnClickListener {
+            if (isInputEmpty()) return@setOnClickListener
+
             loading(true)
 
             setOutliteName()
@@ -112,6 +116,7 @@ class AddUpdateOutliteActivity : AppCompatActivity() {
 
     private fun actionAddUpdate() {
 
+
         when (reqStat) {
             REQ_STATUS_ADD -> {
                 Log.d(TAG, "reqStat: REQ_STATUS_ADD")
@@ -129,6 +134,23 @@ class AddUpdateOutliteActivity : AppCompatActivity() {
             else -> return
         }
 
+
+    }
+
+
+    private fun isInputEmpty(): Boolean {
+
+        val tidakBoleh = "tidak boleh kosong"
+
+        val isOutliteNull = ViewUtils.validateInput(etName, "Outlite $tidakBoleh")
+        val isLocationNull = ViewUtils.validateInput(etLocation, "Location $tidakBoleh")
+
+        if (isLocationNull) {
+            Toast.makeText(this, "Klik Tombol Location", Toast.LENGTH_SHORT).show()
+        }
+
+        return isOutliteNull ||
+                isLocationNull
 
     }
 
