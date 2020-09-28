@@ -82,7 +82,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun bottomNavCustomer() {
         bottomNavigationView.menu.clear() //clear old inflated items.
-        bottomNavigationView.inflateMenu(R.menu.home_customer_bottom_nav);
+        bottomNavigationView.inflateMenu(R.menu.home_customer_bottom_nav)
         val navController = Navigation.findNavController(this, R.id.homeNavHostFragment)
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
     }

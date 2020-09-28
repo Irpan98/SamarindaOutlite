@@ -131,9 +131,14 @@ class RegisterFragment : Fragment() {
 
         val isJobNull = ViewUtils.validateInput(etJob, "Pekerjaan $tidakBoleh")
 
-        val isLocationNull = ViewUtils.validateInput(etLatLng, "Location $tidakBoleh")
-        if (isLocationNull) {
-            Toast.makeText(requireContext(), "Tekan Location", Toast.LENGTH_SHORT).show()
+
+        var isLocationNull = false
+
+        if (levelUser == LEVEL_CUSTOMER) {
+            isLocationNull = ViewUtils.validateInput(etLatLng, "Location $tidakBoleh")
+            if (isLocationNull) {
+                Toast.makeText(requireContext(), "Tekan Location", Toast.LENGTH_SHORT).show()
+            }
         }
 
         return isEmailNull ||
